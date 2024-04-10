@@ -245,6 +245,16 @@ button:focus {
   }
 }
 
+@media (max-width: 560px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .bento--nicole, .bento--title {
+    grid-column: initial;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .bento {
     margin: 0;
