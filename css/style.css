@@ -224,6 +224,12 @@ button:focus {
   background-color: #00cfff;
 }
 
+@media (max-width: 1170px) {
+  .bento--1 {
+    grid-column: span 2;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .bento {
     margin: 0;
