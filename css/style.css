@@ -29,6 +29,9 @@ button:focus {
 }
 
 .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
   max-width: 1170px;
   padding: 20px;
   margin: 0 auto;
@@ -52,6 +55,12 @@ button:focus {
     ),
     url("../images/nicole.jpg") center/cover no-repeat;
   min-height: 50vh;
+
+  justify-content: space-between;
+
+  /* grid-row-start: 1; */
+  /* grid-row-end: 3; */
+  grid-row: span 2;
 }
 
 .logo {
@@ -104,6 +113,7 @@ button:focus {
 }
 
 .bento--title {
+  grid-column: span 2;
   background: #4d6eff;
   text-align: center;
   padding: 1em;
